@@ -57,5 +57,13 @@ void pint(stack_t **head, unsigned int counter);
 void pop(stack_t **head, unsigned int counter);
 void swap(stack_t **head, unsigned int counter);
 void add(stack_t **head, unsigned int counter);
+void sub(stack_t **head, unsigned int cline);
+void mul(stack_t **head, unsigned int cline);
+void div(stack_t **doubly, unsigned int cline);
+void mod(stack_t **doubly, unsigned int cline);
+void pstr(stack_t **doubly, unsigned int cline);
+void pchar(stack_t **doubly, unsigned int cline);
+void rotates(stack_t **doubly, unsigned int cline);
+void reverse_rotation(stack_t **doubly, unsigned int cline);
 
 #endif

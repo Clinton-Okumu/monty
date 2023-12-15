@@ -10,6 +10,7 @@
 void push(stack_t **head, unsigned int counter)
 {
 	int n, j = 0, flag = 0;
+
 	if (bus.arg)
 	{
 	    if (bus.arg[0] == '-')
@@ -37,7 +38,7 @@ void push(stack_t **head, unsigned int counter)
 	    fprintf(stderr, "L%d: usage: push interger\n", counter);
 	    fclose(bus.file);
 	    free(bus.content);
-	    free_stack(8head);
+	    free_stack(head);
 	    exit(EXIT_FAILURE);
 	}
 	n = atoi(bus.arg);
@@ -45,4 +46,4 @@ void push(stack_t **head, unsigned int counter)
 	    addnode(head, n);
 	else
 	    addqueue(head, n);
-}	
+}

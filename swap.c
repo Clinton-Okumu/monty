@@ -4,7 +4,6 @@
  * swap - adds the top elements of the stack.
  * @head: stack ahead.
  * @counter: the number line.
- * 
  *Return: Always Zero.
  */
 void swap(stack_t **head, unsigned int counter)
@@ -28,5 +27,5 @@ exit(EXIT_FAILURE);
 }
 h = *head;
 current = h->n;
-h-> = h->n = current;
+h->n = current;
 }

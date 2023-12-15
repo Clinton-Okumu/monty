@@ -7,9 +7,10 @@
  *
  * Return: 0
  */
-void pop(stack_t **head, unsigned int coi=unter)
+void pop(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
+
 	if (*head == NULL)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n", counter);
@@ -20,4 +21,5 @@ void pop(stack_t **head, unsigned int coi=unter)
 	h = *head;
 	*head = h->next;
 	free(h);
-}	
+}
+

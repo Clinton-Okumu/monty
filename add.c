@@ -13,7 +13,7 @@ stack_t *h;
 int length = 0, current;
 
 h = *head;
-while(h)
+while (h)
 {
 h = h->next;
 length++;
@@ -27,8 +27,8 @@ free_stack(*head);
 exit(EXIT_FAILURE);
 }
 h = *head;
-current = h->n+ h->next->n;
-h->next-> = current;
+current = h->n + h->next->n;
+h->n = current;
 *head = h->next;
 free(h);
 }

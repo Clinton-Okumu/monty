@@ -19,4 +19,5 @@ void pint(stack_t **head, unsigned int counter)
 		free_stack(*head);
 		exit(EXIT_FAILURE);
 	}
-}	
+}
+

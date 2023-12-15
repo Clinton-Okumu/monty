@@ -20,4 +20,5 @@ void pall(stack_t **head, unsigned int counter)
 		printf("%d\n", h->n);
 		h = h->next;
 	}
-}	
+}
+
